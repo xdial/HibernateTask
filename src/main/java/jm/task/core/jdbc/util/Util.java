@@ -10,7 +10,7 @@ public class Util {
     private static final String USER_NAME = "root";
     private static final String PASSWORD = "root";
     public static final String CONNECTION_URL = "jdbc:mysql://" + HOST_NAME + ":3306/" + DB_NAME +
-            "?useSSL=false&serverTimeZone=UTC";
+            "?useUnicode=true&serverTimezone=UTC&useSSL=false";
 
     public static Connection getConnection() throws SQLException,
             ClassNotFoundException {
